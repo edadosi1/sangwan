@@ -6,10 +6,15 @@
 </head>
 <body>
 
+<table border="1" width="100%" summary="회원가입 표만들기">
+
+    <caption>표시는 필수 입력 사항입니다.</caption>
+    <tr> <label for="usename">사용자 이름</label><input type="text" id="usename" >
+        <td>  </td>
+
 <ul>
     <li>
-        <strong>*표시는 필수 입력 사항입니다.</strong></li><hr />
-
+        <strong>*표시는 필수 입력 사항입니다.</strong></li>
     <li><label for="usename">사용자 이름</label><input type="text" id="usename" ></li>
     <li><label for="useid">아이디</label>
         <input type="text" id="useid">
@@ -17,44 +22,43 @@
 
         <em>- 영문, 숫자 조합으로 6~20자까지 사용가능합니다</em><br />
         <em>- 첫 글자는 영문으로 설정해 주십시오.</em><br />
-    </li><hr />
+    </li>
 
     <li><label for="usepassword">비밀번호</label>
         <input type="passwod" id="usepassword"><br />
 
     <em>
         - 영문, 숫자, 특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)
-    </em><br />
+    </em>
 
     <em>
         - 유출되기 쉬운 비밀번호는 등록할 수 없습니다. (예:111, abcd, password 등)
-    </em><br /><hr />
+    </em><br />
 
     <li><label for="usepassword1">비밀번호 확인</label>
         <input type="password" id="usepassword">
-    </li><hr />
+    </li>
 
     <li><label for="e-mail">이메일</label>
         <input type="text" id="e-mail">@
         <input type="text" > <input type="text" >
-    </li><hr />
+    </li>
 
     <li><label for="phon">연락처</label>
         <input type="text" id="phon">-<input type="text">-<input type="text">
-    </li><hr />
+    </li>
 
     <li><label for="phon2">휴대전화</label><input type="text" id="phon2">
         -<input type="text">-<input type="text">
-    </li><hr />
+    </li>
 
     <li><label for="address">주소</label><input type="text" id="address">
         -<input type="text"> -<input type="button" > <br />
         <input type="text"><br />
         <input type="text"><br />
     </li>
-
-
-
+</tr>
+</table>
 
 
 

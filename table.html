@@ -38,24 +38,37 @@
         rowspan 은 colspan 과 합할수 없다
         rowspan 은 합할 tag그룹에서 지우고
         colspan 은 가로합이기에 합할tag 에서 사용-->
-<table border="1" width="50%" summary="자세한설명">
+<table border="1" width="100%" summary="자세한설명">
 
      <caption>게시판</caption>  <!--표 제목-->
 
-<colgroup> <!---->
-<col width="50" />
+<colgroup> <!--표안에 크기%적용해줄때-->
+<col width="100" /> <!--표안에 %지정-->
+<col width="100" /> <!--위에 50이면 밑엔 나머지들만 알아서 값지정-->
 <col width="100" />
 <col width="100" />
 </colgroup>
 
-    <thead>
-        <tr>
-            <td>이게뭥미</td>
-            <td>이거 뭥미</td>
-            <td>이거 뭥미</td>
-            <td>이거 뭥미</td>
+    <thead> <!--박스안에 머릿글로 t-head-->
+        <tr> <!--박스안에 행박스 table와 같이 사용-->
+            <td>이게뭥미</td> <!--박스안에 칸박스-->
+
+            <td colspan="2">이거 뭥미</td><!--colspn을 사용하면 tr사이td에적용됨으로
+                                            colspan 숫자만큼 td tag숫자도 남는다
+                                         왼쪽예에 tag 2개 지워야함 행끼리 가로로 합치는것
+                                     -->
+
         </tr>
     </thead>
+
+    <tfoot>
+        <tr>
+            <th>이거 뭥미</th> <!--td에서 th로 바뀌면 칸안에 글이 가운데로온다-->
+            <td rowspan="2">이거 뭥미</td> <!--세로로 합치는것 사용법은
+                                        colspan과 동일하다 -->
+
+        </tr>
+    <tfoot>
 
 <tbody>
     <tr>
@@ -66,14 +79,7 @@
     </tr>
 </tbody>
 
-<tfoot>
-    <tr>
-        <td>이거 뭥미</td>
-        <td>이거 뭥미</td>
-        <td>이거 뭥미</td>
-        <td>이거 뭥미</td>
-    </tr>
-<tfoot>
+
 </table>
 
 
